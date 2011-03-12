@@ -1,12 +1,2 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @the_day.name
-%p
-  %b Date:
-  = @the_day.date
-
-= link_to 'Edit', edit_the_day_path(@the_day)
-\|
-= link_to 'Back', the_days_path
+%h1= "Is it the day of #{@the_day.name}?"
+%h2= @the_day.is_it?

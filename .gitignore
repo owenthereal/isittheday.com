@@ -4,3 +4,4 @@ log/*.log
 tmp/
 isittheday.com.iml
 .idea
+webrat.log
