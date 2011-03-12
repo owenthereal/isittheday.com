@@ -8,12 +8,7 @@ gem 'rails', '3.0.5'
 gem "jquery-rails"
 gem "haml-rails"
 
-group :production do
-  gem 'pg'
-end
-
 group :development, :test do
-  gem 'thin'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'cucumber-rails'
