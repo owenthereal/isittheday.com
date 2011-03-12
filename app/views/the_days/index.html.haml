@@ -1,0 +1,21 @@
+%h1 Listing the_days
+
+%table
+  %tr
+    %th Name
+    %th Date
+    %th
+    %th
+    %th
+
+  - @the_days.each do |the_day|
+    %tr
+      %td= the_day.name
+      %td= the_day.date
+      %td= link_to 'Show', the_day
+      %td= link_to 'Edit', edit_the_day_path(the_day)
+      %td= link_to 'Destroy', the_day, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New The day', new_the_day_path
